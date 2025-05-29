@@ -1,0 +1,22 @@
+/* SearchBar.css */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 500px;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.7); /* Xanh lá nhẹ nhàng */
+    border: 1px solid #2ecc71;
+    outline: none;
+  }
+
+  

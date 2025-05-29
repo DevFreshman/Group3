@@ -1,0 +1,67 @@
+.reset-container {
+    max-width: 325px;
+    min-height: 400px;
+    margin: 80px auto;
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: "Segoe UI", sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    letter-spacing: 0.7px; 
+    line-height: 1.4;
+  }
+  
+  .reset-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #212529;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .reset-container .instruction {
+    background-color: #fffbe5;
+    border: 1px solid #ffe58f;
+    padding: 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+
+  }
+  
+  .reset-container input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .reset-container .error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .reset-container button {
+    width: 100%;
+    padding: 10px 14px;
+    background-color: #00cc44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-container button:hover {
+    background-color: #00cc44;
+  }
+  

@@ -1,0 +1,37 @@
+/* src/assets/Styles/EmptyCart.css */
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .empty-cart img {
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+  
+  .empty-cart p {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 20px;
+    font-weight: bold; 
+  }
+  
+  .empty-cart button {
+    width: 200px;
+    background-color: #00cc44;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .empty-cart button:hover {
+    background-color: #228B22;
+  }
+  

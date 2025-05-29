@@ -1,0 +1,163 @@
+/* Profile Container Layout */
+.profile-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* Sidebar Styles */
+.profile-sidebar {
+  width: 260px;
+  background: #f8f9fa;
+  padding: 24px;
+  border-right: 1px solid #ddd;
+}
+
+.profile-summary {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.profile-sidebar .avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  margin-bottom: 12px;
+}
+
+.sidebar-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.sidebar-email {
+  font-size: 12px;
+  color: #666;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.sidebar-menu li {
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: #333;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+  background-color: #d4fadc;
+  color: #00cc44;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+.profile-main {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* Detail Field Rows */
+.profile-details .detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-details .detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  flex: 1;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.value {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-field {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  max-width: 240px;
+  height: 36px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+.btn.save {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn.edit {
+  background: none;
+  color: #007bff;
+  padding: 0;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.edit:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Placeholder Tab Style */
+.placeholder-tab {
+  font-style: italic;
+  color: #666;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  text-align: center;
+}

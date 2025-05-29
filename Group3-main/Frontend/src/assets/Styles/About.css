@@ -1,0 +1,221 @@
+/* General Styling */
+:root {
+  --primary-green: #4CAF50;
+  --dark-green: #388E3C;
+  --text-color: #333;
+  --light-gray: #f9f9f9;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* About Section */
+.about-section {
+  padding: 0;
+  background-color: #fff;
+}
+
+/* About Hero Section */
+.about-hero {
+  position: relative;
+  height: 400px; /* Adjust as needed */
+  background: url('https://img.freepik.com/premium-photo/kind-trees-forest-view-from-into-sky_34926-47.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+  color:white;
+  font-size: 1.5em;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* About Content Section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover {
+  transform: translateY(-5px);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.text-block {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: var(--light-gray);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.text-block h2 {
+  font-size: 2.5em;
+  color: var(--primary-green);
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--primary-green);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.text-block p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* Shop Now Button */
+.shop-btn {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.shop-btn:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+.shop-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start for better visual flow */
+  }
+
+  .about-image,
+  .text-block {
+    flex: 1; /* Distribute space equally */
+  }
+
+  .about-image {
+    order: 2; /* Move image to the right on larger screens */
+  }
+
+  .text-block {
+    order: 1; /* Move text to the left on larger screens */
+    margin-right: 40px; /* Add some space between image and text */
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+  }
+
+  .about-content {
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .text-block {
+    padding: 25px;
+  }
+
+  .text-block h2 {
+    font-size: 2em;
+  }
+
+  .text-block p {
+    font-size: 1em;
+  }
+
+  .shop-btn {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .about-hero {
+    height: 300px;
+  }
+}
